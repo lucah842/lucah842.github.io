@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="de"></html>
-<html>
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - lucah842</title>
-    <link rel="icon" type="image/x-icon" href="./heim.svg">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - lucah842</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Bitte wählen</h1>
-        <div class="content">
-            <center><h2>Mobile Version</h2></center>
-            <center><a href="https://lucah842.github.io/mobile" class="content-button">Mobile</a></center>
-        </div>
-        
-         <div class="content">
-            <center><h2>Desktop Version</h2></center>
-            <center><a href="https://lucah842.github.io/desktop" class="content-button">Desktop</a></center>
-        </div>
-    </div>
+  <p>Bitte warten Sie, Sie werden in Kürze weitergeleitet...</p>
+
+  <script>
+    setTimeout(redirect, 5000); // Nach 5 Sekunden wird die Funktion redirect() aufgerufen
+
+    function redirect() {
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      
+      if (isMobile) {
+        window.location.href = 'https://lucah842.github.io/mobile'; // Link für mobile Geräte
+      } else {
+        window.location.href = 'https://lucah842.github.io/desktop'; // Link für Desktop-Geräte
+      }
+    }
+  </script>
 </body>
 </html>

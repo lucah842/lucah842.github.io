@@ -1,25 +1,86 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - lucah842</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lucah842</title>
+<link rel="shortcut icon" href="keyboard_command_key_FILL0_wght400_GRAD0_opsz24.svg" type="image/x-icon">
+<style>
+  body {
+    margin: 0;
+    padding: 20px; /* Add top and bottom padding for white space */
+    font-family: 'Fira Code', monospace;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .code-container {
+    display: flex; /* Create a flex container for code and text */
+    align-items: center; /* Vertically center code and text */
+  }
+
+  .code-box {
+    flex: 1;
+    background-color: #e8f0f7;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  .description-text {
+    margin-left: 20px; /* Space between code and text */
+    color: #666; /* Adjust text color for better readability */
+  }
+
+  @media (max-width: 767px) { /* For mobile phones */
+    body {
+      background-image: url('mobile-background.png'); /* Use a different background image */
+    }
+    .code-container {
+      flex-direction: column; /* Stack elements vertically */
+    }
+    .code-box,
+    .description-text {
+      max-width: 100%; /* Take full width on mobile */
+      margin: 0 auto; /* Center elements horizontally */
+      margin-bottom: 20px; /* Add space between stacked elements */
+      background-color: #e8f0f7;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+</style>
 </head>
 <body>
-  <p>Bitte warten Sie, Sie werden in Kürze weitergeleitet...</p>
+  <div class="code-container">
+    <div class="code-box">
+        Web development is the process of <br>creating websites and <br> web applications. <br> It can involve anything from building <br> a simple static page to <br>complex interactive applications. <br> Web developers use a variety <br>of programming languages <br> and frameworks to create websites <br> that are functional, <br>user-friendly, and visually appealing.
+    </div>
+    <p class="description-text">
+        Hey there! <br>
 
-  <script>
-    setTimeout(redirect, 5000); // Nach 5 Sekunden wird die Funktion redirect() aufgerufen
+        I'm Luca, a web developer <br>absolutely fired up about crafting awesome web experiences. <br>I love building both static websites <br> and full-fledged web applications that come to life. <br>
+        
+        Want to see what I'm working on?<br> Check out my projects on <a href="https://github.com/lucah842">GitHub</a> – I'm constantly building and learning! <br>
+        
+        For deploying my web apps, Google Firebase is my go-to. <br> It lets me get my creations out there in a flash. ⚡️ <br>
+        
+        Right now, <br> I'm diving deep into React to take my skills to the next level. <br>  React's power and flexibility are incredible <br> – can't wait to see what I can build next! <br><br>
+        
+        Let's connect! <br>
 
-    function redirect() {
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      
-      if (isMobile) {
-        window.location.href = 'https://lucah842.github.io/mobile'; // Link für mobile Geräte
-      } else {
-        window.location.href = 'https://lucah842.github.io/desktop'; // Link für Desktop-Geräte
-      }
-    }
-  </script>
+            Instagram: @lucah842 <br>
+            Twitter: @lucah842 <br>
+            Email: lhoenert@aol.com <br>
+        
+    </p>
+  </div>
 </body>
 </html>
